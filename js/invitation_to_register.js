@@ -46,27 +46,26 @@
          * @returns {boolean}
          */
         registerVerify: function () {
-
+           
             //验证码
             var $telCodeVal = $('#J_tel-code').val();
             if (!$telCodeVal) {
                 Tools.msg('请输入验证码！');
                 return false;
             }
-
             lastData = {
                 phone: $('#J_user-tel').val(), //注册人手机号
                 captcha: $telCodeVal, //验证码
                 invitePhone: Tools.getQueryString('invitePhone') || Tools.getQueryString('invitephone') || ''//邀请人手机号
+                //www.muzhubao.com.cn/h5/invite/register?invitePhone=18676742010
             };
-
             return true;
         },
         /**
          * 获取注册验证码
          */
         getCode: function (e) {
-            var self =$(e.currentTarget);
+            var self = $(e.currentTarget);
             if (!this.telVerify()) {
                 return;
             }
@@ -109,7 +108,7 @@
 
                     if (res.status == 1) {//成功 "status":1  失败："status":0,
                         countDown(self)
-                    }else{
+                    } else {
                         Tools.msg(res.msg);
                     }
                 },
@@ -123,9 +122,10 @@
          * 确定注册
          */
         sureRegister: function () {
-            if (!this.telVerify() && !this.registerVerify()) {
+            if (!this.telVerify() || !this.registerVerify()) {
                 return;
             }
+           
             $.ajax({
                 url: 'http://119.23.206.84:8080/mzb-api-app/user/h5/invite/register',
                 data: lastData,
@@ -141,7 +141,7 @@
                     }
                 },
                 error: function (res) {
-                    console.log(res)
+                    console.log(res);
                     Tools.msg(res.msg || '网络错误，请稍后再试。');
                 }
             })

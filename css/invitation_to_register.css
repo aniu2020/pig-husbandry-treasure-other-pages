@@ -469,14 +469,14 @@ ul {
   font-style: normal;
 }
 .invitation-to-register .register-bd .the-pig-bag .mod-cont {
-  padding: .3rem 0;
+  padding: .4rem 0;
   overflow: hidden;
 }
 .invitation-to-register .register-bd .the-pig-bag .mod-cont .mod-cont-l {
   float: left;
   color: #FF3F4C;
   border-right: 1px solid #eaeaea;
-  padding: .4rem .5rem;
+  padding: .4rem .4rem .4rem .74rem;
 }
 .invitation-to-register .register-bd .the-pig-bag .mod-cont .mod-cont-l .raise {
   font-size: .26rem;
@@ -509,11 +509,79 @@ ul {
   padding: 3px .26rem;
   margin-top: 5px;
 }
+.invitation-to-register .register-bd .the-pig-bag .mod-cont .mod-cont-r {
+  float: left;
+}
+.invitation-to-register .register-bd .the-pig-bag .mod-cont .mod-cont-r p {
+  line-height: .56rem;
+  font-size: .36rem;
+  color: #646464;
+  padding-left: .4rem;
+}
+.invitation-to-register .register-bd .the-pig-bag .mod-cont .mod-cont-r p span {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/invitation-to-register/invitation_to_register_spire.png) no-repeat;
+  background-size: 4rem 3rem;
+  margin-right: .2rem;
+}
+.invitation-to-register .register-bd .the-pig-bag .mod-cont .mod-cont-r p .interest-accrual-icon {
+  width: .36rem;
+  height: .40rem;
+  background-position: -2.16rem 0;
+}
+.invitation-to-register .register-bd .the-pig-bag .mod-cont .mod-cont-r p .redelivery-icon {
+  width: .38rem;
+  height: .36rem;
+  background-position: -2.6rem 0;
+}
+.invitation-to-register .register-bd .the-pig-bag .mod-cont .mod-cont-r p .any-time-get-icon {
+  width: .38rem;
+  height: .36rem;
+  background-position: -3.06rem 0;
+}
+.invitation-to-register .register-bd .security-assurance .mod-cont {
+  padding-top: .6rem;
+}
 .invitation-to-register .register-bd .security-assurance .mod-cont .mod-cont-item {
   overflow: hidden;
+  margin-bottom: .6rem;
 }
 .invitation-to-register .register-bd .security-assurance .mod-cont .mod-cont-item .item-l {
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 1rem;
+  height: 1rem;
+  margin-right: .24rem;
+  margin-left: .3rem;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/invitation-to-register/invitation_to_register_spire.png) no-repeat;
+  background-size: 4rem 3rem;
+}
+.invitation-to-register .register-bd .security-assurance .mod-cont .mod-cont-item .item-r {
+  color: #666664;
+}
+.invitation-to-register .register-bd .security-assurance .mod-cont .mod-cont-item .item-r .item-r-tit {
+  color: #000000;
+  font-size: .32rem;
+  padding-bottom: .03rem;
+}
+.invitation-to-register .register-bd .security-assurance .mod-cont .mod-cont-item .item-r .item-r-cont {
+  line-height: .36rem;
+  font-size: .24rem;
+}
+.invitation-to-register .register-bd .security-assurance .mod-cont .lucency .item-l {
+  background-position: 0 -0.81rem;
+}
+.invitation-to-register .register-bd .security-assurance .mod-cont .safe .item-l {
+  background-position: -1.16rem -0.82rem;
+}
+.invitation-to-register .register-bd .security-assurance .mod-cont .reliable .item-l {
+  background-position: -2.32rem -0.81rem;
+}
+.invitation-to-register .register-bd .page-bottom {
+  text-align: center;
+  color: #999490;
+  padding-bottom: .2rem;
+  font-size: .28rem;
 }
