@@ -1,0 +1,102 @@
+@import "common/config";
+@import "common/module";
+
+.reset();
+//red-envelope
+.red-envelope {
+  //red-envelope-hd
+  .red-envelope-hd {
+    img {
+      width: 100%;
+    }
+  }
+  .red-envelope-bd {
+    padding: .3rem .24rem 0;
+    font-size: .26rem;
+    //envelope-bd-item-com
+    .envelope-bd-item-com {
+      margin-bottom: .5rem;
+      .item-tit {
+        .strong {
+          font-weight: bold;
+          color: #333333;
+        }
+        .ask-question {
+          font-size: .3rem;
+          padding-bottom: .2rem;
+        }
+        .answer {
+          color: #8a8a8a;
+          line-height: .36rem;
+        }
+      }
+      .item-cont {
+        background-color: #FEF3F1;
+        color: #e2502f;
+        text-align: center;
+        font-weight: bold;
+        margin-top: .3rem;
+        overflow: hidden;
+      }
+    }
+    //bbin
+    .bbin {
+      .item-cont {
+        padding: .2rem 0;
+        .cont-center {
+          display: inline-block;
+          .cont-center-num {
+            float: left;
+            width: 1rem;
+            text-align: center;
+            .cont-center-icon {
+              width: .46rem;
+              height: .32rem;
+              background: url("../images/red_envelope/red_envelope_icon1.png") no-repeat;
+              display: inline-block;
+              vertical-align: middle;
+              background-size: .46rem .32rem;
+              margin-bottom: .12rem;
+            }
+          }
+          .text {
+            float: left;
+            margin-top: .24rem;
+            font-size: .3rem;
+            .text-icon {
+              padding: 0 .4rem;
+            }
+          }
+        }
+
+      }
+    }
+
+    //red-packet
+    .red-packet {
+      .item-cont {
+        padding: .2rem 0;
+        .item-cont-list {
+          text-align: center;
+          width: 25%;
+          float: left;
+          line-height: .34rem;
+          .list-icon {
+            width: .46rem;
+            height: .4rem;
+            background: url("../images/red_envelope/red_envelope_icon2.png") no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+            background-size: .46rem .4rem;
+            margin-bottom: .1rem;
+          }
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+
+  }
+}
+
