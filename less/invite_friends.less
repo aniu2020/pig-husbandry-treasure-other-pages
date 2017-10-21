@@ -1,0 +1,163 @@
+@import "common/config";
+@import "common/module";
+
+.reset();
+//invite-friends
+.invite-friends {
+  background-color: #F5F5F5;
+  //invite-item-com
+  .invite-item-com {
+    padding: .44rem .24rem .55rem;
+    background-color: #fff;
+    margin-bottom: .12rem;
+    .item-hd {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      .dialog-box-l {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 .86rem;
+        flex: 0 0 .86rem;
+        width: .86rem;
+        height: .86rem;
+        background: url("../images/invite-friends/dialog_box_l.png") no-repeat;
+        background-size: .86rem .86rem;
+      }
+      .dialog-box-r {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        span {
+          display: inline-block;
+          color: #ffffff;
+          background-color: #E94845;
+          padding: .24rem;
+          border-radius: 8px 8px 8px 0;
+          position: relative;
+          margin-left: .12rem;
+          margin-top: .2rem;
+          font-size: .28rem;
+          &:after {
+            position: absolute;
+            bottom: 0;
+            left: -.4rem;
+            content: '';
+            width: .4rem;
+            height: .72rem;
+            background: url("../images/invite-friends/dialog_box_decroate.png") no-repeat;
+            background-size: .4rem .72rem;
+          }
+        }
+      }
+    }
+    .item-bd {
+      padding-top: .4rem;
+      line-height: .4rem;
+      padding-left: .6rem;
+      padding-right: .24rem;
+      font-size: .26rem;
+      color: #555555;
+      p {
+        padding-bottom: .4rem;
+      }
+    }
+
+  }
+
+  //my-reward
+  .my-reward {
+    .item-bd {
+
+      //item-bd-my-reward-item
+      .item-bd-my-reward-item {
+        p {
+          padding-bottom: 0;
+        }
+        .item-tit {
+          font-size: .3rem;
+          font-weight: bold;
+          position: relative;
+          color: #383838;
+          margin-bottom: .2rem;
+          &:after {
+            position: absolute;
+            top: 0;
+            left: -.56rem;
+            content: attr(data-num);
+            width: .46rem;
+            height: .46rem;
+            background: url("../images/invite-friends/txt_decorate.png") no-repeat #fff;
+            background-size: .46rem .46rem;
+            text-align: center;
+            font-size: .22rem;
+            color: #ffffff;
+            line-height: .5rem;
+            z-index: 10;
+            font-style: normal;
+          }
+          .strong {
+            color: #e94845;
+          }
+        }
+        .item-cont {
+          p {
+            padding-bottom: .4rem;
+          }
+        }
+      }
+
+      //item-bd-my-reward-item-first
+      .item-bd-my-reward-item-first {
+        padding-bottom: .8rem;
+        position: relative;
+        &:after {
+          position: absolute;
+          top: 0;
+          left: -.32rem;
+          content: '';
+          width: 2px;
+          height: 100%;
+          background-color: #ff605d;
+          z-index: 1;
+        }
+        &:before {
+          position: absolute;
+          right: -.2rem;
+          top: .2rem;
+          content: '';
+          width: 1.77rem;
+          height: 1.57rem;
+          background: url("../images/invite-friends/my_reward_icon1.png") no-repeat;
+          background-size: 1.77rem 1.57rem;
+        }
+        .item-cont {
+          p {
+            padding-bottom: 0;
+          }
+        }
+      }
+
+      //item-bd-my-reward-item-second
+      .item-bd-my-reward-item-second{
+        position: relative;
+        &:before {
+          position: absolute;
+          right: -.32rem;
+          top: -.48rem;
+          content: '';
+          width: 2.09rem;
+          height: 1.31rem;
+          background: url("../images/invite-friends/my_reward_icon2.png") no-repeat;
+          background-size: 2.09rem 1.31rem;
+        }
+      }
+
+    }
+  }
+  //notice
+  .notice {
+    margin-top: -.8rem;
+  }
+
+}
+
