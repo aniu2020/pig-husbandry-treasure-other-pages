@@ -1,0 +1,59 @@
+@import "common/config";
+@import "common/module";
+
+.reset();
+//aptitude-intro
+.aptitude-intro {
+  padding: 0 .24rem .4rem;
+  .intro-tit {
+    padding: .24rem 0;
+    font-size: .3rem;
+    color: #666666;
+  }
+  .intro-cont {
+    img {
+      width: 100%;
+      margin-top: .4rem;
+    }
+  }
+}
+
+//aptitude-img-slider
+.aptitude-img-slider {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  .close {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: .6rem;
+    height: .6rem;
+    line-height: .5rem;
+    border-radius: 0 0 0 90%;
+    color: #fff;
+    text-align: center;
+    background-color: #0A0A0A;
+    font-size: .3rem;
+    font-weight: 700;
+    opacity: .8;
+    z-index: 110;
+  }
+
+  //swiper-container
+  .swiper-container {
+    margin-top: 15%;
+    .swiper-slide {
+      padding: 0 .24rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}
