@@ -23,7 +23,7 @@
          * 关闭弹框轮播
          */
         closeClick: function () {
-            $('#J_aptitude-img-slider').hide();
+            $('#J_aptitude-img-slider').fadeOut();
         },
         /**
          *  swiper初始化
